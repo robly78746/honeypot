@@ -6,17 +6,17 @@ Time spent: **X** hours spent in total
 
 ### Required: Overview & Setup
 
-- [ ] A basic writeup (250-500 words) on the `README.md` desribing the overall approach, resources/tools used, findings
-- [ ] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
+- [X] A basic writeup (250-500 words) on the `README.md` desribing the overall approach, resources/tools used, findings
+- [X] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
 	- A Vagrantfile or Dockerfile which provisions the honeypot as a VM or container
 	- A bash script that installs and configures the honeypot for a specific OS
 	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
 
 ### Required: Demonstration
 
-- [ ] A basic writeup of the attack (what offensive tools were used, what specifically was detected by the honeypot)
-- [ ] An example of the data captured by the honeypot (example: IDS logs including IP, request paths, alerts triggered)
-- [ ] A screen-cap of the attack being conducted
+- [X] A basic writeup of the attack (what offensive tools were used, what specifically was detected by the honeypot)
+- [X] An example of the data captured by the honeypot (example: IDS logs including IP, request paths, alerts triggered)
+- [X] A screen-cap of the attack being conducted
     
 ### Optional: Features
 - Honeypot
@@ -61,7 +61,7 @@ Verify the two VMs are running with
 
 Get SSH info
 "vagrant ssh server"
-<img src='./sshInfo.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./sshInfo.PNG' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 SSH into server
 Start PuTTY
@@ -141,7 +141,7 @@ Run nmap on the honeypot.
 After nmap finishes, go to your browser that is connected to the MHN admin console and navigate to the Attacks page.
 You should see info on the nmap scan.
 
-<img src='./honeypotLogs.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./honeypotLogs.PNG' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 The attack was an nmap scan. The program nmap on Kali linux in a virtual machine was used to conduct the attack. Protocols used by nmap (epmapper, mirrorc), the destination port, and the source ip address were detected by the honeypot.
 <img src='./attackOnHoneypot.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
